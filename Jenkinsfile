@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                cat samplefile
+                sh '''
+                    echo 'Building..'
+                    cat samplefile
+                '''
             }
         }
         stage('Test') {
