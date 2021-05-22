@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Test dated 22/05/2021 Building..'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Test dated 22/05/2021 Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Test dated 22/05/2021 Deploying....'
             }
         }
     }
