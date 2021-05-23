@@ -1,14 +1,14 @@
 pipeline {
     agent any
     tools{
-        jdk8
+        jdk jdk8
     }
     stages{
         stage('build'){
             steps{
                 echo "building"
-                javac main.java
-                java main 
+                sh "javac main.java"
+                sh "java main" 
             }
         }
         stage('deploy'){
