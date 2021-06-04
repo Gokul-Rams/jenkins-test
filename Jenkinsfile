@@ -6,9 +6,12 @@ pipeline {
     stages{
         stage('build'){
             steps{
-                echo "building"
-                sh "javac main.java"
-                sh "java main" 
+                echo "building" 
+            }
+        }
+        stage('test'){
+            steps{
+                echo "testing" 
             }
         }
         stage('deploy'){
